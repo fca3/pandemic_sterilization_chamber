@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=LCD35
+Exec=/home/pi/repos/pandemic_sterilization_chamber/app/LCD35.sh
+Comment[en_US]=Hardware info
+StartupNotify=true

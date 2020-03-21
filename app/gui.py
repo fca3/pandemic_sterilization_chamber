@@ -1,3 +1,5 @@
+#!/usr/bin/env python3 #the script is python3
+
 from tkinter import *
 from tkinter import font
 import RPi.GPIO as GPIO
@@ -6,14 +8,14 @@ import os
 import time
 import threading
 
-#Read Settings
-parser = configparser.ConfigParser()
-parser.read('config.ini')
-
 #Gloval Variables
 pin = 21
 appMode = 'IDLE'
 cwd = os.getcwd()
+
+#Read Settings
+parser = configparser.ConfigParser()
+parser.read(cwd+'/config.ini')
 
 armingTime = int(parser.get('Settings','ArmingSeconds'))
 activeUVTime = int(parser.get('Settings','ActiveUVSeconds'))
